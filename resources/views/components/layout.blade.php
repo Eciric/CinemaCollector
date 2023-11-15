@@ -15,8 +15,15 @@
 </head>
 
 <body class="bg-indigo-900 text-white">
-    <x-navigation />
-    {{$slot}}
+    <div class="flex h-full">
+        <div class="">
+            <x-navigation />
+        </div>
+        <div class="grow">
+            <x-search />
+            {{$slot}}
+        </div>
+    </div>
 
     <script src="{{asset('minimize.js')}}"></script>
 </body>
